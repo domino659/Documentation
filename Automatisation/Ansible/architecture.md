@@ -1,18 +1,25 @@
 # Architecture Ansible
 
-inv(file)
-    postprod(file)
-        group_vars(file) # Variable spécifique au host des groupes de serv
-        host_vars(file) # Variable spécifique au host serveur
-        hosts # List Serveurs
-    prod(file)
-        group_vars(file)
-        host_vars(file)
-        hosts
-    udd(file) # Usine de développement
-        group_vars(file)
-        host_vars(file)
-        hosts
+```
+├── inv(file) 
+│   └── postprod(file)
+│   │   └── group_vars(file) # Variable spécifique au host des groupes de serv
+│   │   └── host_vars(file) # Variable spécifique au host serveur
+│   │   └── hosts # List Serveurs
+│   │
+│   └── prod(file)
+│   |   └── group_vars(file)
+│   |   └── host_vars(file)
+│   |   └── hosts
+│   │
+│   └── udd(file)
+│       └── group_vars(file)
+│       └── host_vars(file)
+│       └── hosts
+|
+|
+
+```
 roles
     mafonction(file)
         defaults(file) # Variable utilisé par defaut (variables immuables (ssh, port 22))
