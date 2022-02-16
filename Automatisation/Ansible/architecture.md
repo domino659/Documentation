@@ -28,7 +28,7 @@ roles
 playbooks.yml
 
 ### Create Roles
-mkdir -p roles/monrole/{defaults,files,handlers,tasks,templates,vars}
+    mkdir -p roles/monrole/{defaults,files,handlers,tasks,templates,vars}
 
 ## Playbook
 ---
