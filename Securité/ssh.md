@@ -1,5 +1,5 @@
 # Création clé SSH (à stocker dans /home/username/.ssh)
-ssh-keygen -o -a 200 -t ed25519 -C "<USERNAME> <DATE>" -f <KEY_NAME>
+    ssh-keygen -o -a 200 -t ed25519 -C "<USERNAME> <DATE>" -f <KEY_NAME>
 
 Protocole	Longueur minimum (bits)	    Longueur Maximum(bits)
 RSA	        1024	                    16384
