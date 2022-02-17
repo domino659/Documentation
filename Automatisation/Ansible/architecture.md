@@ -1,4 +1,4 @@
-# Architecture Ansible
+## Architecture Ansible
 
 
     ├── config (file) 
@@ -34,10 +34,10 @@
 
 
 
-### Create Roles
+#### Create Roles
     mkdir -p roles/monrole/{defaults,files,handlers,tasks,templates,vars}
 
-## Playbook
+### Playbook
 
     ---
     - hosts: all
@@ -53,7 +53,7 @@
         - { role: modifypingu, tags: ['file', 'modify'] }
 
 
-## Roles
+### Roles
 
     ---
     - name: Add Block
