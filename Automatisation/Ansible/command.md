@@ -3,7 +3,7 @@
 
     ansible -i inv/udd/hosts 178.32.244.255 -m setup # Print variable of the remote host
 
-## Launch Playbook
+## Lancer Playbook
     ansible-playbook -i inv/udd/hosts playbook.yml
         --ask-become-pass -> ask sudo
         --check -> simulate launch playbook
