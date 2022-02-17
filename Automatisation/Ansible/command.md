@@ -1,11 +1,11 @@
 ## Connection ansible to machine
 Test Ping
 
-    ansible -i inv/udd/hosts 178.32.244.255 -m ping
+    ansible -i inv/udd/hosts <ADDRESSE IP/DNS> -m ping
 
 Print variable of the remote host
 
-    ansible -i inv/udd/hosts 178.32.244.255 -m setup
+    ansible -i inv/udd/hosts <ADDRESSE IP/DNS> -m setup
 
 ## Lancer Playbook
     ansible-playbook -i inv/udd/hosts playbook.yml
