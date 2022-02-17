@@ -1,11 +1,12 @@
-# Changer droit accès fichier
-1 -> Execution(r)
-2 -> Ecriture(w)
-4 -> Lecture(x)
+## Changer droit accès fichier
 
-u -> User
-g -> Group
-o -> Others
+    1 -> Execution(r)
+    2 -> Ecriture(w)
+    4 -> Lecture(x)
 
-chmod 700
+    u -> User
+    g -> Group
+    o -> Others
+
+    chmod 700
 
