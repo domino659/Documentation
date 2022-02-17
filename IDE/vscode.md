@@ -1,3 +1,4 @@
-code . # Open in terminal
+### Open VS Code in terminal
+    code .
 
 Ctrl + Shift + P -> Command
