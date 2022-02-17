@@ -9,3 +9,5 @@ Une vue (View) contient la présentation de l'interface graphique.
 Un contrôleur (Controller) contient la logique concernant les actions effectuées par l'utilisateur.
 
 ![Texte alternatif](.../File/Language/Architecture.mvc.png)
+
+![Texte alternatif](.../File/mvc.png)
