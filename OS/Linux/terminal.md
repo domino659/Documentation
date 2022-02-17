@@ -1,25 +1,31 @@
-Affichage fichiers
-ls
-Afficher les fichiers cachés et les listés
+##Affichage fichiers
 
-ls -al
-Gestion packages
+    ls
+
+## Afficher les fichiers cachés et les listés
+
+    ls -al
+
+## Gestion packages
 Afficher list des packages
 
-sudo dpkg --list
-Afficher package a désinstaller
+    sudo dpkg --list
 
-sudo dpkg --list | grep '^rc'
-Remove package
+## Afficher package a désinstaller
 
-purge <APP_NAME>
-Remove dépendances inutiles
+    sudo dpkg --list | grep '^rc'
 
-autoremove
-Recherche
-Recherche d'un chaîne de caractères dans un fichier spécifié
+## Remove package
 
-grep
+    purge <APP_NAME>
+
+## Remove dépendances inutiles
+
+    autoremove
+
+## Recherche d'un chaîne de caractères dans un fichier spécifié
+
+    grep
 
 ## Trouver emplacement disque Ubuntu (Exolorateur de fichier)
 
