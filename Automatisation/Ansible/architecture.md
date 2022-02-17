@@ -38,6 +38,7 @@
     mkdir -p roles/monrole/{defaults,files,handlers,tasks,templates,vars}
 
 ## Playbook
+```
 ---
 - hosts: all
   name: Manage file
@@ -50,8 +51,10 @@
     - { role: addblock, tags: ['file', 'blockt4'] }
     - { role: pause, tags: ['file', 'pause'] }
     - { role: modifypingu, tags: ['file', 'modify'] }
+```
 
 ## Roles
+```
 ---
 - name: Add Block
   ansible.builtin.blockinfile:
@@ -64,3 +67,4 @@
       Il aime les igloo
     owner: msion
     group: msion
+```
