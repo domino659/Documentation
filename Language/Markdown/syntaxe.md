@@ -47,13 +47,12 @@ Rendez-vous sur [Texte du lien][monsite] !
 - - -
 
 ## Diagramme d'arborescence
-```
-├── file
-│   └── var.yml
-│   └── vault.yml
-|
-├── file2
-│   └── prod
-│   │   └── users
-│   │   └── hosts
-```
+
+    ├── file
+    │   └── var.yml
+    │   └── vault.yml
+    |
+    ├── file2
+    │   └── prod
+    │   │   └── users
+    │   │   └── hosts
