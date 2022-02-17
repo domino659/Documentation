@@ -9,3 +9,16 @@
         --check -> simulate launch playbook
         --tags ->  launch only selectes tags
         --limit -> launch only selected server or group
+
+## Create Vault
+Dossier externe contenant mdp
+
+    mkdir -p .credentials/ansible.yml
+
+Crée dossier vault si il n'existe pas
+
+    ansible-vautl create config/vault.yml
+
+Editer le fichier vault
+
+    ansible-vault edit config/vault.yml
