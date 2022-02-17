@@ -6,6 +6,23 @@
 
     ls -al
 
+## Créer Fichier
+Créer fichier
+
+    touch
+    
+Créer dossier
+    
+    mkdir
+
+L'option -p permet de créer des sous répertoires
+    
+    mkdir -p
+
+Supprimer dossier
+    
+    rm
+
 ## Gestion packages
 Afficher list des packages
 
