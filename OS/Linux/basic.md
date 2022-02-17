@@ -1,6 +1,30 @@
-ls -al #Afficher les fichiers cachés
+## Affichage fichiers
 
-sudo dpkg --list #Afficher list
-sudo dpkg --list | grep '^rc' #Afficher package a désinstaller
-purge <APP_NAME> #Remove application
-autoremove #Remove package
+    ls
+
+Afficher les fichiers cachés et les listés
+
+    ls -al
+
+## Gestion packages
+Afficher list des packages
+
+    sudo dpkg --list
+    
+Afficher package a désinstaller
+
+    sudo dpkg --list | grep '^rc'
+    
+Remove package
+
+    purge <APP_NAME>
+    
+Remove dépendances inutiles
+
+    autoremove
+    
+## Recherche
+    
+Recherche d'un chaîne de caractères dans un fichier spécifié
+
+    grep
