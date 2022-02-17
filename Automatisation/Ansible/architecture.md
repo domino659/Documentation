@@ -7,8 +7,11 @@
     |
     ├── inv (file) 
     │   └── postprod (file)
-    │   │   └── group_vars(file) # Variable spécifique au host des groupes de serv
-    │   │   └── host_vars(file) # Variable spécifique au host serveur
+    │   │   └── group_vars(file)
+    │   |   |   └── all.ymml # Variable spécifique a toutes les entités
+    │   |   |   └── vm.ymml # Variable spécifique a un groupe d'entités
+    │   │   └── host_vars(file)
+    │   |   |   └── makemake.ymml # Variable spécifique a une entité
     │   │   └── hosts # List Serveurs
     │   │
     │   └── prod (file)
@@ -30,8 +33,22 @@
     └── playbook00.yml
     └── playbook01.yml
     └── playbook02.yml
-    └── ansible.cfg
+    └── ansible.cfg # Fichier config Ansible
 
+#### Ancible.cfg
+
+    [defaults]
+    ansible_managed         = Ansible managed: {file} modified on %Y-%m-%d %H:%M:%S by {uid} on {host}
+    retry_files_enabled     = False
+    vault_password_file     = /home/domino659/.credentials/ansible.yml
+    # interpreter_python      = /usr/bin/python3
+    forks                   = 5
+    host_key_checking       = False
+    # roles_path              = ./roles
+    # inventory               = ./inv
+
+    [ssh_connection]
+    ssh_args                = -o ControlMaster=auto -o ControlPersist=60s -o ForwardAgent=yes
 
 
 #### Créer Roles
