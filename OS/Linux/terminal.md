@@ -23,6 +23,14 @@ Supprimer dossier
     
     rm
 
+## Ouvrir Dossier via VS Code
+    
+    code .
+    
+## Ouvrir Dossier via explorer
+ 
+    explorer.exe .
+
 ## Gestion packages
 Afficher list des packages
 
