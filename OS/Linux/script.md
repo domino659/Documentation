@@ -1,3 +1,7 @@
+Install Package Debian
+    
+    apt-get install ansible git ksh htop iftop grc vim net-tools screen sysstat software-properties-common apt-transport-https wget curl tree
+
 ## Charger clé SSH au lancement teminal
 (ajouter a la fin du dossier ~/.bashrc)
 
