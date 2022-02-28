@@ -8,6 +8,13 @@
     Ed25519	    256	                        256
 
 ## Connexion SSH Serveur
-    ssh <ADDRESSE IP/DNS>
-Connect as root (or specific user)
+    
+    ssh <USER>@<ADDRESSE IP/DNS>
+    
+Connect as root
+    
+    ssh <ADDRESSE IP/DNS> -l root
+
+Example
+
     ssh ganymede.gwath-land.fr -l root
