@@ -16,7 +16,7 @@ Install Package Debian
             echo "ERROR: Could no launch ssh-agent" >&2
         fi
         . $SSH_AGENT_CONF > /dev/null
-        ssh-add ~/.ssh/msion_axians
+        ssh-add ~/.ssh/<KEY_NAME>
     fi
     if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
         source /etc/profile.d/vte.sh
