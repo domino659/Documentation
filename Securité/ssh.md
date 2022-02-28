@@ -9,3 +9,5 @@
 
 ## Connexion SSH Serveur
     ssh <ADDRESSE IP/DNS>
+Connect as root (or specific user)
+    ssh ganymede.gwath-land.fr -l root
