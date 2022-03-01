@@ -29,6 +29,6 @@ Dossier Config SSH
             ServerAliveInterval 30
 
     Host    ganymede.gwath-land.fr
-            User domino6590-
+            User domino659
             IdentityFile ~/.ssh/msion_axians
             Port 22
