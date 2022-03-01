@@ -18,3 +18,17 @@ Connect as root
 Example
 
     ssh ganymede.gwath-land.fr -l root
+
+Dossier Config SSH
+
+    Host *
+            ForwardAgent yes
+            StrictHostKeyChecking no
+            HashKnownHosts yes
+            PermitLocalCommand yes
+            ServerAliveInterval 30
+
+    Host    ganymede.gwath-land.fr
+            User domino6590-
+            IdentityFile ~/.ssh/msion_axians
+            Port 22
