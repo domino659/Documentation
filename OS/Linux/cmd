@@ -1,3 +1,7 @@
 Session root
 
   sudo -i
+
+Find Package info
+
+  apt-cache search ssl | grep openssl
