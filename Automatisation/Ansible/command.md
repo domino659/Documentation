@@ -21,7 +21,7 @@ Dossier externe contenant mdp
 
 Crée dossier vault si il n'existe pas
 
-    ansible-vautl create config/vault.yml
+    ansible-vault create config/vault.yml
 
 Editer le fichier vault
 
