@@ -13,6 +13,7 @@ Print variable of the remote host
         --check -> simulate launch playbook
         --tags ->  launch only selectes tags
         --limit -> launch only selected server or group
+        --ask-become-pass -> If need root access
 
 ## Create Vault
 Dossier externe contenant mdp
