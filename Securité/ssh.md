@@ -15,9 +15,13 @@ Connect as root
     
     ssh <ADDRESSE IP/DNS> -l root
 
-Example
+Options:
 
-    ssh ganymede.gwath-land.fr -l root
+    - p Port (default: 22)
+    - l Login
+    - i Clée ssh
+    - A ForwardAgent
+    - o Options supplémentaires
 
 Dossier Config SSH
 
