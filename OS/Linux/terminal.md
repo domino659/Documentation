@@ -1,4 +1,4 @@
-##Affichage fichiers
+## Affichage fichiers
 
     ls
 
@@ -7,19 +7,19 @@
     ls -al
 
 ## Créer Fichier
-Créer fichier
+### Créer fichier
 
     touch
     
-Créer dossier
+### Créer dossier
     
     mkdir
 
-L'option -p permet de créer des sous répertoires
+### L'option -p permet de créer des sous répertoires
     
     mkdir -p
 
-Supprimer dossier
+### Supprimer dossier
     
     rm
 
@@ -30,6 +30,14 @@ Supprimer dossier
 ## Ouvrir Dossier via explorer
  
     explorer.exe .
+
+## Session root
+
+    sudo -i
+
+## Find Package info
+
+    apt-cache search ssl | grep openssl
 
 ## Gestion packages
 Afficher list des packages
