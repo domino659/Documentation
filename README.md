@@ -2,7 +2,9 @@
 
 Personal Git Repository containing varioud documentation.
 
-
+## Documentation Languages
+https://docs.python.org/3/
+https://docs.ansible.com
 
 ## Cheat Sheet
 * https://devhints.io
