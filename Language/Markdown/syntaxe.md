@@ -38,6 +38,10 @@ Rendez-vous sur [Texte du lien][monsite] !
 ## Code source (bloc)(Indentation d'une tabulation ou 4 espaces) ou ``` au début et a la fin du bloc
     print("Hello World!")
 
+    ```python
+        print("Hello World!")
+    ```    
+
 ## Code source (en ligne)
     Utilises la fonction `strpad()` !
 
