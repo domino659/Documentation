@@ -21,6 +21,10 @@ _Phrase en italique_
 ## Liens
 [Texte du lien](http://www.google.fr "Texte pour le titre, facultatif")
 
+## Ancrage
+[lien afficher](#nomAncre)
+## Titre <a id="nomAncre"></a>
+
 ## Liens par référence
 Rendez-vous sur [Texte du lien][monsite] !
 [monsite]: http://www.google.fr "Titre facultatif"
