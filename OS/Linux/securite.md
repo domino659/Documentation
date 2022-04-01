@@ -1,3 +1,7 @@
+## [Sommaire](README.md)
+
+# Securite
+
 ## Changer droit accès fichier
 
     1 -> Execution(r)
@@ -8,5 +12,10 @@
     g -> Group
     o -> Others
 
-    chmod 700
+    chmod 700 <FILE>
 
+<br>
+
+## Launch File
+
+    ./<FILE>

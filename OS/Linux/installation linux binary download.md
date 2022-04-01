@@ -1,9 +1,0 @@
-### Download file and place it in /usr/local/bin
-### Change authorisation of file
-
-  chmod a+x <FILE>
-
-### Launch File
-
-  ./<FILE>
- 

@@ -1,3 +1,5 @@
+## [Sommaire](README.md)
+
 # Initalisation d'un projet
 
 ## Lier dépôt distant

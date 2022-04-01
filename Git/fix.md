@@ -1,3 +1,7 @@
+## [Sommaire](README.md)
+
+# Fix
+
 ## Rebase
 Use when branch main has advanced and impossible to merge
 
@@ -18,6 +22,8 @@ Use when branch main has advanced and impossible to merge
     git merge <COPY MAIN>
     git branch -d <COPY MAIN>
 
+<br>
+
 ## Ammend
 Combine the change staged in the ancient cmomit with the actual one
     
@@ -30,11 +36,15 @@ Can also allow you to change the commit message
 If you just want to add a file that was forgotten
 
     git commit --amend --no-edit
-    
+ 
+<br>
+   
 ## Go back to a precise commit
     git log --online # Get the commit id
     gti checkout <ID COMMIT>
     gut checkout -b <NEW-BRANCH>
+
+<br>
 
 ## Get a precise file from a commit
     git checkout <ID COMMIT> <FILE NAME>

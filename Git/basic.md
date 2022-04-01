@@ -1,14 +1,23 @@
-## Push
+## [Sommaire](README.md)
 
+# Commande Basic
+
+## Push
+```
     git status
     git add <FILE/*>
     git commit -m "<MSG COMMIT>"
     git push
+```
+
+<br>
 
 ## Pull
 Get up to date with remote branche
 
     git pull <REMOTE>
+
+<br>
 
 ## Branch
  
@@ -36,6 +45,8 @@ Pull all branch from git
 
     git fetch <remote>
 
+<br>
+
 ## Merge
 
     git checkout -b <DEV-BRANCH> <MAIN> 
@@ -43,6 +54,8 @@ Pull all branch from git
     git commit -m "<MSG COMMIT>"
     git checkout <MAIN>
     git merge <DEV-BRANCH>
+
+<br>
 
 ## Stash
 
