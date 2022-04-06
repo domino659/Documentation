@@ -27,8 +27,10 @@ except:
 Il n'y a pas de bonne ou mauvaises facon de faire, cela dépend des situations.
 
 **LBYL**
+
 ```python
 liste = [2, 7, "texte", 4]
+
 for i in liste:
     if not str(i).isdigit():
         liste.remove(i)
@@ -36,10 +38,31 @@ for i in liste:
 ```
 
 **EAFP**
+
 ```python
 liste = [2, 7, "texte", 4]
+
 try:
     total = sum(liste)
 except:
     total = 0
+```
+
+```python
+a = 5
+b = 0
+
+try:
+    resultat = (a / b)
+except ZeroDivisionError:
+    print("Division par zero impossible.")
+except TypeError:
+    print("La variable b n'est pas du bon type.)
+except NameError as e:
+    print("Erreur:", e)
+else:
+    print(resultat)
+# OR
+finally:
+    print("Fin du bloc.")
 ```
