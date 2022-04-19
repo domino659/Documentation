@@ -17,11 +17,13 @@ Pour régler ce problème, vous pouvez alterner entre les **guillemets simples**
 ```python
 print(r'c:/home/domino659/Linux-Test')
 ```
+
 <br>
 
 ## Les nombres
+
 Les nombres sont définis en deux catégories principales: les **nombres entiers** et les **nombres décimaux**.
-  
+
 <br>
     
 ## Les booléens
@@ -35,13 +37,13 @@ Quand on définit un booléen, un nombre ou une chaîne de caractères, pas beso
 
 Il existe cependant des classes qui nous permettent de créer ces objets:
 
-* **str**
+- **str**
 
-* **int**
+- **int**
 
-* **float**
+- **float**
 
-* **bool**
+- **bool**
 
 Ces classes ne sont pas très utiles pour créer des objets.
 

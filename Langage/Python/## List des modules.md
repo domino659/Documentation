@@ -4,17 +4,16 @@
 
 ## Modules
 
-* random: <br>
-Générer des nombres aléatoires
+- random: <br>
+  Générer des nombres aléatoires
 
-* [pathlib](#pathlib): <br>
-Gérer les fichiers de l'os
+- [pathlib](#pathlib): <br>
+  Gérer les fichiers de l'os
 
-* os: Obsoléte <br> 
-Gérer les fichiers de l'os
+- os: Obsoléte <br>
+  Gérer les fichiers de l'os
 
 <br>
-
 
 ## Détail
 
@@ -26,6 +25,7 @@ random.randint(5, 10)
 ```
 
 ## Import
+
     import <nom_du_module>
 
 <br>
@@ -46,7 +46,7 @@ Print function help mise en forme
     pprint(dir(random))
 
 Print si une fonction est callable
-    print(callable(pprint))
+print(callable(pprint))
 
 <br>
 
@@ -139,7 +139,7 @@ from pathlib import Path
 home = Path.home() # PosixPath('/Users/thibh/')
 
 # Ne fonctionne pas car on essaie de récupérer l'attribut suffix sur la chaîne de caractères "main.py"
-home / "Projet" / "main.py".suffix  
+home / "Projet" / "main.py".suffix
 
 # Avec des parenthèses, ça fonctionne !
 (home / "Projet" / "main.py").suffix
@@ -353,9 +353,9 @@ for f in files:
     f.rename(output_dir / f.name)
 ```
 
- On peut utiliser la méthode **rename** pour déplacer un fichier.
+On peut utiliser la méthode **rename** pour déplacer un fichier.
 
-#### Créer les constantes d'un dossier avec __file__
+#### Créer les constantes d'un dossier avec **file**
 
 ```python
 from pathlib import Path

@@ -32,6 +32,7 @@ print(contenu)
 ```
 
 Option pour windows:
+
 ```python
 with open(chemin, "r", encoding='utf-8') as access:
 ```
@@ -52,6 +53,7 @@ print(contenu)
 ## Ecrire à l'intérieur d'un fichier
 
 Remplacer contenu existant:
+
 ```python
 with open(chemin, "w") as access:
 contenu = access.write("Bonjour")
@@ -59,6 +61,7 @@ print(contenu)
 ```
 
 Ajouter fin dossier:
+
 ```python
 with open(chemin, "a") as access:
 contenu = access.write("Bonjour")
@@ -75,18 +78,18 @@ Avec Python, on peut utiliser le module **json** disponible dans la bibliothèqu
 
 Avec Python, un fichier JSON peut contenir les types de données suivants:
 
-* Une **chaîne de caractères**
-* Un nombre (**entier** et **décimal**)
-* Un **booléen**
-* L'objet **None**
-* Une **liste**
-* Un **dictionnaire**
+- Une **chaîne de caractères**
+- Un nombre (**entier** et **décimal**)
+- Un **booléen**
+- L'objet **None**
+- Une **liste**
+- Un **dictionnaire**
 
 Dans le format JSON, certains types de données seront notés différemment que ce à quoi nous sommes habitués avec Python:
 
-* Pour les chaînes de caractères, **seuls les guillemets doubles** sont acceptés
-* Les booléens s'écrivent tout en minuscule (**true** et **false**)
-* L'objet **None** est représenté par **null**
+- Pour les chaînes de caractères, **seuls les guillemets doubles** sont acceptés
+- Les booléens s'écrivent tout en minuscule (**true** et **false**)
+- L'objet **None** est représenté par **null**
 
 Il est important de noter qu'un fichier JSON ne peut contenir **qu'un seul objet**.
 
@@ -104,6 +107,7 @@ Mais pas celui-ci:
 "Pascal"
 "Patrick"
 ```
+
 Vous pouvez par contre sans problème stocker une seule valeur.
 
 Un fichier JSON peut donc contenir une chaîne de caractères ou un nombre.
@@ -111,6 +115,7 @@ Un fichier JSON peut donc contenir une chaîne de caractères ou un nombre.
 ```json
 "Patrick"
 ```
+
 ```json
 2938.231
 ```
@@ -121,28 +126,31 @@ Voici quelques exemples de fichiers JSON valides:
 
 ```json
 {
-    "Patrick": {
-        "salaire": 24000,
-        "date_embauche": "2020-10-25",
-        "manager": true
-    },
-    "Pascal": {
-        "salaire": 35000,
-        "date_embauche": "2020-08-17",
-        "manager": false
-    }
+  "Patrick": {
+    "salaire": 24000,
+    "date_embauche": "2020-10-25",
+    "manager": true
+  },
+  "Pascal": {
+    "salaire": 35000,
+    "date_embauche": "2020-08-17",
+    "manager": false
+  }
 }
 ```
+
 ```json
 {
-    "Cahiers": 3,
-    "Stylos": 2,
-    "Agrafes": null
+  "Cahiers": 3,
+  "Stylos": 2,
+  "Agrafes": null
 }
 ```
+
 ```json
 [1, 4, 2, 3, 1, 76, 4, 23, 4]
 ```
+
 ```json
 ["Bonjour", null, "test", 34, 9.743, false]
 ```
@@ -181,7 +189,7 @@ with open("/chemin/vers/fichier.json", "r") as f:
     data = json.load(f)
 
 print(data)  #  True
-print(type(data))  #  
+print(type(data))  #
 ```
 
 ## Lire un fichier JSON
@@ -242,7 +250,7 @@ with open("/Users/thibh/test.json", "w") as f:
 Le fichier JSON contiendra:
 
 ```json
-{"Cahiers": 3, "Stylos": 2, "Agrafes": null}
+{ "Cahiers": 3, "Stylos": 2, "Agrafes": null }
 ```
 
 Avec un **indent** de 2:
@@ -259,6 +267,7 @@ data = {
 with open("/Users/thibh/test.json", "w") as f:
     json.dump(data, f, indent=2)
 ```
+
 ```json
 {
   "Cahiers": 3,
@@ -266,7 +275,9 @@ with open("/Users/thibh/test.json", "w") as f:
   "Agrafes": null
 }
 ```
+
 Avec un **indent** de 4:
+
 ```python
 import json
 
@@ -279,15 +290,17 @@ data = {
 with open("/Users/thibh/test.json", "w") as f:
     json.dump(data, f, indent=4)
 ```
+
 ```json
 {
-    "Cahiers": 3,
-    "Stylos": 2,
-    "Agrafes": null
+  "Cahiers": 3,
+  "Stylos": 2,
+  "Agrafes": null
 }
 ```
 
 Script Complet (récypération données et modification):
+
 ```python
 import json
 

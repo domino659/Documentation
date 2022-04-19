@@ -2,20 +2,20 @@
 
 # Fonctions supplémentaires
 
-* len <br>
-Nombre élément contenud ans l'élément.
+- len <br>
+  Nombre élément contenud ans l'élément.
 
-* round <br>
-Arrondir nombre décimal.
+- round <br>
+  Arrondir nombre décimal.
 
-* min <br>
-Retourne nombre minimum ou caractére minimum.
+- min <br>
+  Retourne nombre minimum ou caractére minimum.
 
-* max <br>
-Retourne nombre maximum ou caractére maximum.
+- max <br>
+  Retourne nombre maximum ou caractére maximum.
 
-* sum <br>
-Retourne somme.
+- sum <br>
+  Retourne somme.
 
-* range <br>
-Crée une liste de nombre allant de x a y.
+- range <br>
+  Crée une liste de nombre allant de x a y.

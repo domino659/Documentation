@@ -11,13 +11,14 @@ Pour demander des informations à un utilisateur dans un script en ligne de comm
 <br>
 
 ## La fonction input
+
 La fonction input accepte un argument qui correspond au texte que l'on souhaite afficher à l'utilisateur.
 
 Par exemple, si on souhaite demander l'âge de l'utilisateur:
 
 ```python
 >>> input("Quel âge avez-vous ? ")
-Quel âge avez-vous ? 
+Quel âge avez-vous ?
 ```
 
 L'utilisateur peut ensuite écrire à la fin de la phrase affichée. La saisie de l'utilisateur est ensuite retournée par la fonction input:

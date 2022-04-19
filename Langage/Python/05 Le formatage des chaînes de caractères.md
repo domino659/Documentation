@@ -31,6 +31,7 @@ url = "{protocole}ww.{domaine}.{extension}".format(protocole=protocole, domaine=
 <br>
 
 ## La concaténation avec l'opérateur +
+
 Avant de parler de formatage, on parle souvent de concaténation.
 
 La concaténation consiste à mettre bout à bout plusieurs chaînes de caractères.
@@ -46,9 +47,9 @@ url = protocole + "www." + nom_du_site + "." + extension
 
 Ça fonctionne, mais très rapidement vous allez observer deux problèmes:
 
-* Ce n'est pas très agréable à lire.
+- Ce n'est pas très agréable à lire.
 
-* Vous ne pouvez concaténer que des objets du même type (car Python est un langage fortement typé).
+- Vous ne pouvez concaténer que des objets du même type (car Python est un langage fortement typé).
 
 Ainsi, le code suivant retournera une erreur car la variable **age** est un nombre entier:
 
@@ -74,6 +75,7 @@ des **TypeError**.
 <br>
 
 ## La concaténation avec les f-string
+
 Depuis la version 3.6 de Python, une fonctionnalité très intéressante a fait son apparition: **les f-string**.
 
 Derrière ce nom un peu bizarre se trouve une façon très efficace de formater des chaînes de caractères.
@@ -84,6 +86,7 @@ l'ordre du millième de milliseconde mais tout de même).
 Pour utiliser les f-string, il suffit de rajouter la lettre f devant votre chaîne de caractères:
 
     phrase = f"Je suis un f-string."
+
 On peut ensuite, comme avec la méthode format, insérer des données dans la chaîne de caractères avec les accolades.
 
 La différence majeure réside dans le fait qu'on peut écrire du code Python directement dans les accolades.
@@ -163,7 +166,7 @@ prenom = "Pierre"
 age = 26
 phrase = "Je m'appelle {} et j'ai {} ans.".format(prenom, age)
 ```
- 
+
 Mais ci-dessous nous aurons une erreur ( IndexError: tuple index out of range ) car il y a deux emplacements dans la chaîne
 de caractères mais un seul élément est passé à la méthode format:
 

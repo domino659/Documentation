@@ -8,9 +8,9 @@ Il est nécessaire dans certains cas d'empécher les erreurs liée a l'incompati
 
 Fonction permettant de changer le type des variables:
 
-* int()
+- int()
 
-* str()
+- str()
 
 <br>
 

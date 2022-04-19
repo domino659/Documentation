@@ -17,6 +17,7 @@ Enfin, et c'est vraiment le plus intéressant, une liste est une **séquence de 
 <br>
 
 ## Une liste est ordonnée
+
 C'est important que tu retiennes bien qu'une liste est ordonnée car ce n'est pas le cas de toutes les structures de données en Python.
 
 Dans tous les cas, cela signifie simplement que les éléments de ta liste seront toujours dans l'ordre que tu auras défini dans ton code.
@@ -25,7 +26,7 @@ Il n'y a pas d'histoire d'ordre alphabétique ou quoi que ce soit, c'est toi qui
 
 ```python
 # liste vide
-villes = [] 
+villes = []
 # liste avec trois items de type str
 villes = ['Paris', 'Lille', 'Lyon']
 print(villes)
@@ -68,7 +69,7 @@ On continue avec les villes:
 
 ```python
 villes = ['Paris', 'Lille', 'Lyon']
-print(villes[0])  # 'Paris' 
+print(villes[0])  # 'Paris'
 print(villes[1])  # 'Lille'
 print(villes[2])  # 'Lyon'
 ```
@@ -80,6 +81,7 @@ Pour rappel, le premier élément d'une liste se trouve toujours en position zé
 <br>
 
 ## Muable
+
 Quand on parle d'objet muable, cela veut dire qu'un objet peut être modifié même après son assignation.
 
 C'est-à-dire qu'on va pouvoir ajouter, modifier ou supprimer des éléments à la volée.
@@ -92,7 +94,7 @@ print(villes) # ['Paris', 'Lille', 'Lyon']
 # Et si on ajoutait une ville ?
 villes.append('Strasbourg')
 print(villes) # ['Paris', 'Lille', 'Lyon', 'Strasbourg']
-# J'ai jamais aimé Paris... 
+# J'ai jamais aimé Paris...
 del villes[0]
 print(villes) # ['Lille', 'Lyon', 'Strasbourg']
 ```
@@ -118,13 +120,13 @@ C'est une question que tu es en droit de te poser au vu des nombreuses possibili
 
 Je vais te donner une astuce personnelle que j'utilise à chaque fois que j'ai besoin de créer une structure de données:
 
-* Est-ce que j'ai besoin d'associer une valeur à une clé ? Oui ?→ **Dictionnaire**
+- Est-ce que j'ai besoin d'associer une valeur à une clé ? Oui ?→ **Dictionnaire**
 
-* Est-ce que j'ai besoin de modifier ma structure de données ? Non → **Tuple**
+- Est-ce que j'ai besoin de modifier ma structure de données ? Non → **Tuple**
 
-* Est-ce que j'ai besoin de garder les éléments dans le même ordre ? Non → **Set**
+- Est-ce que j'ai besoin de garder les éléments dans le même ordre ? Non → **Set**
 
-* Pour toutes les autres possibilités → **Liste**
+- Pour toutes les autres possibilités → **Liste**
 
 Avec ce raisonnement, tu devrais t'en sortir dans la majorité des cas.
 
@@ -150,9 +152,9 @@ Comme la liste a été convertie en set, il se peut que les éléments ne soient
 
 Il existe deux méthodes pour créer une liste vide:
 
-* Avec les crochets → **[]**
+- Avec les crochets → **[]**
 
-* Avec le constructeur → **list()**
+- Avec le constructeur → **list()**
 
 Avec les crochets
 
@@ -180,9 +182,9 @@ print(site_to_liste)  # ['D', 'o', 'c', 's', 't', 'r', 'i', 'n', 'g']
 
 #### Accéder à des éléments
 
-* **liste[indice]** → Retourne l'élément associé à l'indice
+- **liste[indice]** → Retourne l'élément associé à l'indice
 
-* **liste[début:fin:pas]** → Retourne le ou les éléments en fonction de l'intervalle précisé
+- **liste[début:fin:pas]** → Retourne le ou les éléments en fonction de l'intervalle précisé
 
 **liste[indice]** → Retourne l'élément associé à l'indice
 
@@ -199,7 +201,7 @@ Tu peux également récupérer des éléments en partant de la fin avec les indi
 
 **liste[début:fin:pas]** → Retourne le ou les éléments en fonction de l'intervalle précisé
 
-Dans ce cas, on doit utiliser le découpage par tranche *ou slicing*: **[début:fin:pas]**
+Dans ce cas, on doit utiliser le découpage par tranche _ou slicing_: **[début:fin:pas]**
 
 Cela te permet de créer un intervalle de sélection dans ta liste et de préciser éventuellement un pas si tu souhaites récupérer un élément sur deux par exemple.
 
@@ -226,11 +228,11 @@ Fais attention quand tu utilises le slicing car l'indice de début est **inclusi
 
 Pour ajouter des éléments dans une liste, Python dispose de plusieurs méthodes:
 
-* **.append(item)** → Ajoute un item à la fin de ta liste
+- **.append(item)** → Ajoute un item à la fin de ta liste
 
-* **.insert(index, item)** → Ajoute un item à la position indiquée en paramètre
+- **.insert(index, item)** → Ajoute un item à la position indiquée en paramètre
 
-* **.extend(iterable)** → Ajouter tous les items de la collection dans ta liste
+- **.extend(iterable)** → Ajouter tous les items de la collection dans ta liste
 
 **.append(item)** → Ajoute un élément à la fin de ta liste
 
@@ -276,9 +278,9 @@ print(villes)  # ['Paris', 'Lille', 'Lyon', 'Strasbourg', 'Marseille']
 
 Une liste est un objet muable, ce qui signifie qu'on peut la modifier sans problème !
 
-* **liste[indice]** = value → Assigne une nouvelle valeur
+- **liste[indice]** = value → Assigne une nouvelle valeur
 
-* **liste[début:fin]** = [value1, value2, ...] → Assigne des nouvelles valeur sur l'intervalle donné
+- **liste[début:fin]** = [value1, value2, ...] → Assigne des nouvelles valeur sur l'intervalle donné
 
 **liste[indice]** = value → Assigne une nouvelle valeur
 
@@ -302,13 +304,13 @@ print(villes)  # ['Paris', 'Strasbourg', 'Rennes']
 
 Il existe trois façons de supprimer un élément:
 
-* **del liste[indice]** → Supprime un ou plusieurs éléments d'une liste. Peut aussi être utilisé pour détruire complètement une liste.
+- **del liste[indice]** → Supprime un ou plusieurs éléments d'une liste. Peut aussi être utilisé pour détruire complètement une liste.
 
-* **liste.pop(indice)** → Retire un élément de la liste. Si tu ne précises pas d'indice, cela retire automatiquement le dernier élément. Et surtout, cela permet de récupérer l'élément supprimé.
+- **liste.pop(indice)** → Retire un élément de la liste. Si tu ne précises pas d'indice, cela retire automatiquement le dernier élément. Et surtout, cela permet de récupérer l'élément supprimé.
 
-* **liste.remove(item)** → Supprime un élément de la liste.
+- **liste.remove(item)** → Supprime un élément de la liste.
 
-* **liste.clear()** →Supprime tous les éléments de la liste.
+- **liste.clear()** →Supprime tous les éléments de la liste.
 
 **del liste[indice]** → Supprime un ou plusieurs éléments d'une liste. Peut également être utilisé pour détruire complètement une liste.
 
@@ -366,19 +368,19 @@ if 6 in liste:
 
 Retourne la position d'un élément dans une liste.
 
-* index()
+- index()
 
 Retourne le nombre d'occurence d'un élément dans une liste.
 
-* count()
+- count()
 
 Trie la liste
 
-* sort() (return None)/sorted() (Return list)
+- sort() (return None)/sorted() (Return list)
 
 Inverse la liste
 
-* reverse()
+- reverse()
 
 <br>
 

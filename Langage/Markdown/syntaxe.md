@@ -40,9 +40,9 @@ _Phrase en italique_
 
 ## Listes à puces ordonées
 
-* Item 1
-* Item 2
-* Item 3
+- Item 1
+- Item 2
+- Item 3
 
 ```
 * Item 1
@@ -77,6 +77,7 @@ _Phrase en italique_
 ## Ancrage
 
 [lien afficher](#nomAncre)
+
 ## Titre <a id="nomAncre"></a>
 
     [lien afficher](#nomAncre)
@@ -102,7 +103,6 @@ Rendez-vous sur [Texte du lien][monsite] !
 
 <br>
 
-
 ## Images par référence
 
 ![Text alternatif][img-monsite]
@@ -125,7 +125,7 @@ Rendez-vous sur [Texte du lien][monsite] !
 
 ```python
 print("Hello World!")
-```    
+```
 
 <br>
 
@@ -136,15 +136,16 @@ Utilises la fonction `strpad()` !
 <br>
 
 ## Séparateur Horizontal
+
 ---
 
 <br>
 
-* * *
+---
 
 <br>
 
-- - -
+---
 
 <br>
 

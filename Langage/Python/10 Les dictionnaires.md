@@ -4,7 +4,7 @@
 
 Les dictionnaires sont des **collections d'objets non-ordonnées**.
 
-Un dictionnaire est composé d'éléments et chaque élément se compose d'une paire *clé: valeur*.
+Un dictionnaire est composé d'éléments et chaque élément se compose d'une paire _clé: valeur_.
 
 Dans d'autres langages de programmation, on parle de tableaux associatifs ou de hashs.
 
@@ -114,7 +114,7 @@ La différence entre les deux ? Avec les crochets, une erreur de type **KeyError
 d = {
     'spam': 'eggs',
     'knights': 'lumberjack',
-    'bacon': 'sausage'    
+    'bacon': 'sausage'
 }
 d['spam']  # 'eggs'
 
@@ -139,7 +139,7 @@ Les dictionnaires étant des objets muables, ils sont faciles à modifier:
 ```python
 d = {
     'spam': 'eggs',
-    'knights': 'lumberjack',   
+    'knights': 'lumberjack',
 }
 
 d['spam'] = 'ham' # Clé existe déjà, remplace la valeur

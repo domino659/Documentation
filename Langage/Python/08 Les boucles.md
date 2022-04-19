@@ -38,7 +38,6 @@ for i in range(10):
     print("pingu")
 ```
 
-
 <br>
 
 ### **for ... else**
@@ -110,11 +109,11 @@ Il faut noter **deux choses très importantes**:
 
 1. On déclare la variable qui nous sert de condition **avant** la boucle **while**
 
-    ⇒ On assigne la valeur **O** à la variable **i** juste avant d'entrer dans la boucle.
+   ⇒ On assigne la valeur **O** à la variable **i** juste avant d'entrer dans la boucle.
 
 2. On met à jour notre condition à chaque nouvelle itération
 
-    ⇒ On incrémente **i** à la fin de ma boucle
+   ⇒ On incrémente **i** à la fin de ma boucle
 
 Ce faisant, on évite de rentrer dans une **boucle infinie**.
 
@@ -147,7 +146,7 @@ else:
 
 ## L'instruction **continue**
 
-L'instruction continue** permet d'ignorer des valeurs lors de l'itération en cours sans pour autant arrêter l'exécution.
+L'instruction continue\*\* permet d'ignorer des valeurs lors de l'itération en cours sans pour autant arrêter l'exécution.
 
 ```python
 fruits = ['🍊', '🍋', '🍏', '🍒', '🥭']
@@ -214,7 +213,6 @@ Le nombre 4 n'est donc jamais affichés dans la boucle **for b in range(5)**.
 
 Par contre, la boucle **for a in range(5)** est exécutée pour toutes les itérations.
 
-
 <br>
 
 ## Les compréhensions de liste
@@ -222,6 +220,7 @@ Par contre, la boucle **for a in range(5)** est exécutée pour toutes les itér
 Permet d'itérer sur une liste et de filtrer les éléments grace a des structures conditionelles sur une seul ligne.
 
 Sans compréhension de liste:
+
 ```python
 liste = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
 nombres_positifs = []
@@ -231,6 +230,7 @@ for i in liste:
 ```
 
 Avec compréhension de liste:
+
 ```python
 liste = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]
 nombres_positifs = [i * 2 for i in liste if i > 0]

@@ -9,6 +9,7 @@ Grâce à des conditions, vous pouvez contrôler votre code et exécuter une act
 <br>
 
 ## Syntaxe
+
 En Python, on écrit une structure conditionnelle grâce au mot clé if:
 
 ```python
@@ -33,7 +34,7 @@ De même, vous devez **indenter votre code à l'intérieur de votre structure co
 La première ligne indentée marque le début du bloc de code et cela s'arrête à la première ligne qui ne l'est plus.
 
 ```python
-age = 24 
+age = 24
 MAJORITE = 18
 
 if age >= MAJORITE:
@@ -55,6 +56,7 @@ Dans tous les cas, le programme se termine par l'affichage de l'âge de l'utilis
 <br>
 
 ## if / else
+
 Dans le premier exemple, notre code faisait quelque chose de particulier uniquement si l'utilisateur était majeur.
 
 Qu'en est-il s'il est mineur ?
@@ -64,7 +66,7 @@ Le mot clé **else** permet d'exécuter une condition si les conditions précéd
 On doit l'écrire au même niveau d'indentation que le **if**, finir par deux-points **:** puis indenter notre code.
 
 ```python
-age = 15 
+age = 15
 MAJORITE = 18
 
 if age >= MAJORITE:
@@ -78,6 +80,7 @@ print("J'ai", age, "ans !")
 <br>
 
 ## if / elif / else
+
 Le mot-clé **elif** (pour « else if », en français « sinon si ») permet d'ajouter des conditions supplémentaires à une structure conditionnelle.
 
 On peut ajouter autant de **elif** que nécessaire.
@@ -85,7 +88,7 @@ On peut ajouter autant de **elif** que nécessaire.
 Si la condition testée dans le **if** est **False** alors on testera celles du/des **elif**. Si toutes ces conditions retournent **False** alors on exécutera le code se trouvant dans le **else**.
 
 ```python
-age = 18 
+age = 18
 MAJORITE = 18
 
 if age > MAJORITE:
@@ -95,12 +98,13 @@ elif age == MAJORITE:
 else:
     print("Je suis mineur..")
 
-print("J'ai", age, "ans !") 
+print("J'ai", age, "ans !")
 ```
 
 <br>
 
 ## Imbriquer des structures conditionnelles
+
 Vous pouvez imbriquer une structure conditionnelle dans une autre structure, puis dans une autre, et encore une autre, etc...
 
 On appelle ça de l'imbrication en français (« nesting » en anglais).
@@ -110,7 +114,7 @@ Il suffit de déclarer votre nouvelle structure à l'intérieur de la précéden
 Vous imbriquez ainsi, grâce à l'indentation, plusieurs structures les unes dans les autres, comme des poupées russes:
 
 ```python
-age = 18 
+age = 18
 MAJORITE = 18
 
 if age >= MAJORITE:

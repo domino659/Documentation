@@ -8,9 +8,9 @@ Une variable permet d'associer un objet à un nom. On peut ensuite accéder à c
 
 Cela a plusieurs avantages:
 
-* On peut ré-utiliser un objet à différents endroits de notre code plus rapidement.
+- On peut ré-utiliser un objet à différents endroits de notre code plus rapidement.
 
-* On peut modifier un objet à un seul endroit et répercuter ces changements partout dans notre script.
+- On peut modifier un objet à un seul endroit et répercuter ces changements partout dans notre script.
 
 <br>
 
@@ -38,14 +38,13 @@ Ainsi, quand on modifie la liste, on modifie un seul et même objet. Les variabl
 
 Il existe trois façons principales d'affecter une valeur à une variable:
 
-* L'affectation simple
+- L'affectation simple
 
-* L'affectation parallèle
+- L'affectation parallèle
 
-* L'affectation multiple
+- L'affectation multiple
 
 <br>
-
 
 Avec l'affectation simple, on associe une valeur à une variable:
 
@@ -87,11 +86,11 @@ Il existe plusieurs conventions très suivies dans la communauté Python que vou
 
 Ainsi, il est conseillé d'utiliser uniquement des lettres en minuscule et des tirets du bas pour séparer les mots Voici quelques exemples de noms de variables qui respectent ces règles:
 
-* website_url
+- website_url
 
-* number_of_students
+- number_of_students
 
-* bank_account_id
+- bank_account_id
 
 Votre script fonctionnera si vous ne suivez pas ces conventions. Mais elles sont très respectées dans la communauté Python et permettent d'avoir une uniformité très agréable parmi les scripts sur lesquels vous allez travailler.
 
@@ -101,20 +100,20 @@ Si vous respectez toutes ces conventions et que vous vous habituez à les utilis
 
 ## Fonctions supplémentaires
 
-* len <br>
-Nombre élément contenud ans l'élément.
+- len <br>
+  Nombre élément contenud ans l'élément.
 
-* round <br>
-Arrondir nombre décimal.
+- round <br>
+  Arrondir nombre décimal.
 
-* min <br>
-Retourne nombre minimum ou caractére minimum.
+- min <br>
+  Retourne nombre minimum ou caractére minimum.
 
-* max <br>
-Retourne nombre maximum ou caractére maximum.
+- max <br>
+  Retourne nombre maximum ou caractére maximum.
 
-* sum <br>
-Retourne somme.
+- sum <br>
+  Retourne somme.
 
-* range <br>
-Crée une liste de nombre allant de x a y.
+- range <br>
+  Crée une liste de nombre allant de x a y.
