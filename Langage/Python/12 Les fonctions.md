@@ -152,3 +152,15 @@ print(a)
 ☝️ Dans ce code, on crée une variable **a** dans la fonction qui est donc différente de la variable **a** définie dans l'espace globale.
 
 Ce script affichera donc 10 (la valeur de **a** dans la fonction **foo** que l'on appelle) puis 5 (la valeur de **a** dans l'espace global, qui n'a donc pas été modifiée).
+
+Deux fonctions existent pour afficher les variables stockès dans les espaces **locales** et **globals**.
+
+```python
+a = 4
+
+def foo():
+    b = 5
+    locals()
+
+globals()
+```

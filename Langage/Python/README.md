@@ -18,6 +18,9 @@
 - ### [10 Les dictionnaires](<10 Les dictionnaires.md>)
 - ### [11 Les exeptions et la programmation LBYL et EAFP](<11 Les exeptions et la programmation LBYL et EAFP.md>)
 - ### [12 Les fonctions](<12 Les fonctions.md>)
+- ### [13 Les annotations de type](<13 Les annotations de type.md>)
+- ### [14 Les modules](<14 Les modules.md>)
+- ### [15 Les docstrings](<15 Les docstrings.md>)
 
 <br>
 
