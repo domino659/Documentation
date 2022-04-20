@@ -13,6 +13,9 @@
 - os: Obsoléte <br>
   Gérer les fichiers de l'os
 
+- [logging](#logging) <br>
+  Gérer les messages d'erreur/avertissement
+
 <br>
 
 ## Détail
@@ -364,4 +367,32 @@ SOURCE_FILE = Path(__file__).resolve()  # resolve permet de résoudre les liens 
 SOURCE_DIR = SOURCE_FILE.parent
 ROOT_DIR = SOURCE_DIR.parent
 DATA_DIR = SOURCE_DIR / "DATA"
+```
+
+## Logging <a id="logging"></a>
+
+5 types de **logging**:
+
+- Debug
+- Info
+- Warning
+- Error
+- Critical
+
+```python
+import logging
+
+logging.basicConfig(level=logging.INFO,
+                    filename="app.log",
+                    # Replace
+                    filemode="w",
+                    # Append
+                    filemode="a",
+                    format='%(asctime)s - %(levelname)s - %(message)s')
+
+logging.debug("La fonction a bien été exécutée")
+logging.info("Message d'information général")
+logging.warning("Attention !")
+logging.error("Une erreur est arrivée")
+logging.critical("Erreur critique")
 ```
