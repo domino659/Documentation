@@ -21,6 +21,8 @@
 - ### [13 Les annotations de type](<13 Les annotations de type.md>)
 - ### [14 Les modules](<14 Les modules.md>)
 - ### [15 Les docstrings](<15 Les docstrings.md>)
+- ### [16 Les environnements virtuels](<16 Les environnements virtuels.md>)
+- ### [17 L'orienté objet](<17 L'orienté objet.md>)
 
 <br>
 

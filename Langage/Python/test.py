@@ -1,13 +1,13 @@
-def ma_fonction_super_chiante(oui, encore_une_variable, une_autre, fun):
-    """_summary_
+class Livre:
 
-    Args:
-        oui (_type_): _description_
-        encore_une_variable (_type_): _description_
-        une_autre (_type_): _description_
-        fun (_type_): _description_
+    def __init__(self, nom, nombre_de_pages, prix):
+        self.nom = nom
+        self.nombre_de_pages = nombre_de_pages
+        self.prix = prix
+    
+livre_HP = Livre("Harry Pottter", 300, 10.99)
 
-    Returns:
-        _type_: _description_
-    """
-    return encore_une_variable
+livre_LOTR = Livre("Le Seigneur des Anneaux", 400, 13.99)
+
+print(livre_HP.nom)
+print(livre_LOTR)
