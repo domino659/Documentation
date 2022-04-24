@@ -1,63 +1,50 @@
-import sys, os, json
+import json
+import logging
+import os
 
-ACTIONS = ["Ajouter", "Retirer", "Afficher", "Vider", "Quitter"]
-MENU_CHOICES = ["1", "2", "3", "4", "5"]
+from constants import DATA_DIR
 
-CUR_DIR = os.path.dirname(__file__)
-LISTE_PATH = os.path.join(CUR_DIR, "liste.json")
+LOGGER = logging.getLogger
 
-if os.path.exists(LISTE_PATH):
-    with open(LISTE_PATH, "r") as current_file:
-        LISTE = json.load(current_file)
-else:
-    LISTE = []
+class Liste(list):
+    def __init__(self, nom):
+        self.nom = nom
 
-while True:
-    user_answer = ""
-    while user_answer not in MENU_CHOICES:
-        print("Choississez parmi les 5 options suivantes:")
-        for i, action in enumerate(ACTIONS, 1):
-            print(f"{i}. {action}")
-        user_answer = input(" > ")
-        if user_answer not in MENU_CHOICES:
-            print("Veuillez choisir une option valide...\n")
-            continue
+    def ajouter(self, element):
+        if not isinstance(element, str):
+            raise ValueError("Vous ne pouvez ajouter que des chaînes de caractères !")
+        
+        if element in self:
+            LOGGER.error(f"{element} est déja dans la liste.")
+            return False
 
-    if user_answer == "1":
-        print("Entrez le nom d'un élément à ajouter a la liste de courses:")
-        user_add = input(" > ")
-        LISTE.append(user_add)
-        print(f"L'élément {LISTE[-1]} a bien été ajouté a la liste.\n")
+        self.append(element)
+        return True
 
-    elif user_answer == "2":
-        print("Entrez l'index d'un élément à retirer a la liste de courses:")
-        user_remove = input(" > ")
-
-        if user_remove.isdigit():
-            if int(user_remove) > 0 and int(user_remove) <= len(LISTE):
-                deleted_item = LISTE.pop(int(user_remove) -1)
-                print(f"L'élément {deleted_item} a bien été retirer a la liste.\n")
-            else:
-                print("Cet index n'existe pas.\n")
+    def enlever(self, element):
+        if element in self:
+            self.remove(element)
+            return True
         else:
-            print("Veuillez rentrer un index valide.\n")
+            return False
 
-    elif user_answer == "3":
-        if LISTE:
-            print("Voici le contenu de votre liste:")
-            for i, item in enumerate(LISTE, 1):
-                    print(f"{i}. {item}")
-        else:
-            print("Votre liste ne contient aucun élément.\n")
+    def afficher(self):
+        print(f"Ma liste de {self.nom}:")
+        for element in self:
+                print(f" - {element}")
 
-    elif user_answer == "4":
-        LISTE.clear()
-        print("La liste a été vidé.\n")
+    def sauvegarde(self):
+        chemin = os.path.join(DATA_DIR, f"{self.nom}.json")
+        if not os.path.exists(DATA_DIR):
+            os.makedirs(DATA_DIR)
 
-    elif user_answer == "5":
-        with open(LISTE_PATH, "w") as current_file:
-            json.dump(LISTE, current_file, indent=2)
-        print("A bientôt")
-        sys.exit()
+        with open(chemin, "w") as f:
+            json.dump(self, f, indent=4)
+        return True
 
-    print("-" * 50)
+if __name__ == "__main__":
+    liste = Liste("courses")
+    liste.ajouter("Pommes")
+    liste.ajouter("Poires")
+    liste.afficher()
+    liste.sauvegarde()
