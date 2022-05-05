@@ -58,3 +58,5 @@ if __name__ == "__main__":
     # movie.remove_from_movies()
     movies = get_movies()
     print(movies)
+    for movie in movies:
+        print(movie.title)
