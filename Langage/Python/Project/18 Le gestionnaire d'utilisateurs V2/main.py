@@ -64,20 +64,14 @@ class User:
 
 def get_all_users():
     return [User(**user) for user in User.DB.all()]
-    # for user in User.DB.all():
-    #     single_user = User(**user)
-    #     print(single_user)
-    #     # print(single_user.phone_number)
-    #     print("-" * 10)
 
-if __name__ == "__main__":
-    # print(get_all_users())
-    create_user = User("Tristan", "Bègue", "+33 4 98 81 62 24", "rue Isabelle Bonneau\n42223 Sainte Martine-les-Bains")
-    create_user.save(validate_data=True)
-    specific_user = User("Tristan", "Bègue")
-    print(specific_user.db_instance)
-    print(specific_user.exists())
-    print(specific_user.delete())
+# if __name__ == "__main__":
+    # create_user = User("Tristan", "Bègue", "+33 4 98 81 62 24", "rue Isabelle Bonneau\n42223 Sainte Martine-les-Bains")
+    # create_user.save(validate_data=True)
+    # specific_user = User("Tristan", "Bègue")
+    # print(specific_user.db_instance)
+    # print(specific_user.exists())
+    # print(specific_user.delete())
 
     # from faker import Faker
     # fake = Faker(locale="fr_FR")
@@ -86,7 +80,7 @@ if __name__ == "__main__":
     #         last_name=fake.last_name(),
     #         phone_number=fake.phone_number(),
     #         address=fake.address())
-    #     # print(user.save(validate_data=True)) 
+    #     print(user.save(validate_data=True)) 
     #     # print(user)
     #     # print(repr(user))
     #     # print(user.__dict__)
