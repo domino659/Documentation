@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "poetry-env"
+version = "0.1.0"
+description = ""
+authors = ["domino659 <martin@sionfamily.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+PySide2 = "*"
+currencyconverter = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
