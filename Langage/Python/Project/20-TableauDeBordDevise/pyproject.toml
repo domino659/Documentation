@@ -9,6 +9,7 @@ python = "^3.10"
 
 [tool.poetry.dev-dependencies]
 django = "*"
+requests = "*"
 
 
 [build-system]
