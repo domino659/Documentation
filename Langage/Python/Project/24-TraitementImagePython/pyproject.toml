@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "Traitement Image"
+version = "0.1.0"
+description = ""
+authors = ["domino659 <martin@sionfamily.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+Pillow = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
